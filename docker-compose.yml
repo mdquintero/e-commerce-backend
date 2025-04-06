@@ -1,0 +1,13 @@
+services:
+  my_app:
+    image: ecommerce
+    networks:
+      - proyecto_default
+    env_file:
+      - .env  
+    ports:
+      -5432:5432  
+
+networks:
+  proyecto_default:
+    external: true  
