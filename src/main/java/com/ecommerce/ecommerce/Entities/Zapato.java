@@ -20,8 +20,6 @@ public class Zapato {
     @OneToOne
     @JoinColumn(name = "tipo_calzado_id")
     private TipoCalzado tipoCalzado;
-    private Color color;
-    private Talla talla;
 
     public Long getId() {
         return id;
@@ -64,19 +62,4 @@ public class Zapato {
         this.tipoCalzado = tipoCalzado;
     }
 
-    public Color getColor() {
-        return color;
-    }
-
-    public void setColor(Color color) {
-        this.color = color;
-    }
-
-    public Talla getTalla() {
-        return talla;
-    }
-
-    public void setTalla(Talla talla) {
-        this.talla = talla;
-    }
 }
